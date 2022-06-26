@@ -1,22 +1,37 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Henry</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
         <link rel="stylesheet" href="./styles/styles.css">
-        <script type="text/javascript" src="./DOM.js" async></script>
+        <script type="text/javascript" src="./index.js" async></script>
     </head>
     <body>
-        <div id="header">
-            <a href="https://www.soyhenry.com/" target="_blank_"></a>
-            <span>DOM Homework</span>
-        </div>
-        <h1>To-Do App</h1>
-        <div><span id="createdBy">Aplicación creada por:</span></div>
-        <div id="container">
-            <div id="inputContainer">
-                <input type="text" id="toDoInput" placeholder="Descripción To-Do..."/></input><div id="addButton"><span>AGREGAR</span></div>
+        <nav>
+            <div id="header">
+                <span>To Do List with DOM</span>
             </div>
-            <div id="toDoContainer"></div>
-        </div>
+        </nav>
+        <main>
+            <div class="container">
+                <h1>To Do List</h1>
+                <div class="search">
+                    <form>
+                        <input type="text" placeholder="Add To Do...">
+                        <button class="btn-add">+</button>
+                    </form>
+                </div>
+                <div class="li-container">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="empty">
+                    <p>You don't have things to do.</p>
+                </div>
+            </div>
+        </main>
     </body>
 </html>
